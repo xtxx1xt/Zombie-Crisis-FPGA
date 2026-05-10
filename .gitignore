@@ -1,0 +1,25 @@
+# Vivado
+.Xil/
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.gen/
+
+# Logs
+*.jou
+*.log
+*.str
+
+# Temp
+*.tmp
+*.wdb
+*.pb
+
+# Generated outputs
+*.bit
+*.bin
+
+# OS
+.DS_Store
