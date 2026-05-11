@@ -135,8 +135,3 @@ Build notes
 * build and run the C software
 * connect keyboard input through the MAX3421E USB port
 
-
-Team
-
-* Xiner Tan
-* Chenxi Zhang
