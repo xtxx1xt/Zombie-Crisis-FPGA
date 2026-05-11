@@ -2,14 +2,17 @@ Project Outbreak
 
 2-player FPGA zombie survival game for ECE 385
 
+
 What this project is
 
 Project Outbreak is a top-down zombie survival game built on an FPGA. Two players share the same screen, move around a large tile map, shoot zombies, pick up weapons and health packs, and try to survive as long as possible.
+
 
 The project is split into two main parts:
 
 * MicroBlaze software reads USB keyboard input through the MAX3421E controller
 * SystemVerilog hardware runs the game logic, rendering, collision checks, and audio
+
 
 Start here:
 
@@ -19,6 +22,7 @@ Start here:
 * zombie_manager.sv / zombie_controller.sv: zombie spawning, chasing, hp, and hit detection
 * Color_Mapper.sv: tile map, sprites, UI, bullets, pickups, and final pixel color
 * software/lw_usb_main.c: reads keyboard input and sends the key bitmask to hardware
+
 
 Main features
 
@@ -50,6 +54,7 @@ Audio:
 * PWM audio output
 * short sample sounds for shooting and damage feedback
 
+
 Input and controls
 
 Player 1:
@@ -62,6 +67,7 @@ Player 2:
 * I/J/K/L: move
 * Enter: shoot
 
+
 High-level architecture
 
 * USB keyboard input is handled in C on MicroBlaze
@@ -70,6 +76,7 @@ High-level architecture
 * hardware modules update game state once per frame using vsync
 * color_mapper draws the current frame from the camera position
 * audio_controller plays sound effects through PWM
+
 
 Hardware module summary
 
@@ -103,6 +110,7 @@ Hardware module summary
 * audio_controller.sv
   reads sound samples from ROM and generates PWM audio
 
+
 Software files
 
 * software/lw_usb_main.c
@@ -117,6 +125,7 @@ Software files
 * software/lw_usb/project_config.h
   USB and hardware configuration constants
 
+
 Build notes
 
 * open the hardware project in Vivado
@@ -125,6 +134,7 @@ Build notes
 * export the hardware to Vitis
 * build and run the C software
 * connect keyboard input through the MAX3421E USB port
+
 
 Team
 
