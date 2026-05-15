@@ -1,4 +1,4 @@
-# Project Outbreak
+# Zombie Crisis
 
 Two-player FPGA zombie survival game for ECE 385.
 
